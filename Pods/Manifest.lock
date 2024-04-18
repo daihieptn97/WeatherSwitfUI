@@ -1,0 +1,16 @@
+PODS:
+  - BottomSheetSwiftUI (3.1.1)
+
+DEPENDENCIES:
+  - BottomSheetSwiftUI
+
+SPEC REPOS:
+  trunk:
+    - BottomSheetSwiftUI
+
+SPEC CHECKSUMS:
+  BottomSheetSwiftUI: 08b5ada340a164b7ef49cf04b6733a0bd3f02957
+
+PODFILE CHECKSUM: 7c77235df112e6954623f2ec42a5dc120b5708e0
+
+COCOAPODS: 1.15.2

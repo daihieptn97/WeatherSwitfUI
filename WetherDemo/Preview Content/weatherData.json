@@ -1,0 +1,47 @@
+
+{
+    "coord": {
+        "lon": 105.791,
+        "lat": 21.5619
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 297.97,
+        "feels_like": 29.94,
+        "temp_min": 297.97,
+        "temp_max": 297.97,
+        "pressure": 1007,
+        "humidity": 93,
+        "sea_level": 1007,
+        "grnd_level": 1003
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.25,
+        "deg": 149,
+        "gust": 5.34
+    },
+    "clouds": {
+        "all": 95
+    },
+    "dt": 1713397815,
+    "sys": {
+        "type": 1,
+        "id": 9308,
+        "country": "VN",
+        "sunrise": 1713393293,
+        "sunset": 1713439021
+    },
+    "timezone": 25200,
+    "id": 1566319,
+    "name": "Thai Nguyen",
+    "cod": 200
+}
