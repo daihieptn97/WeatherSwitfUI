@@ -7,12 +7,12 @@
 
 import SwiftUI
 import BottomSheetSwiftUI
-import PartialSheet
+
 import MapKit
 
 struct WeatherView: View {
     
-    var weather : ResponseBody
+    var weather : ResponseBodyWeatherData
     @State var bottomSheetPosition: BottomSheetPosition = .absolute(200)
     @State var isShowSheet = true;
     @State var isPresented = true;
@@ -110,7 +110,7 @@ struct City: Identifiable {
 
 struct BottomSheetCustomView : View {
     
-    var weather: ResponseBody
+    var weather: ResponseBodyWeatherData
     
     
     @State var annotations: [City] = []
