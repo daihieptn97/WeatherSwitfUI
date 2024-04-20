@@ -6,13 +6,9 @@
 </div>
 
 
-### DEMO 1 
+<video controls width="500">
+    <source src="./docs/video.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
-![Demo 1!](./docs/img1.PNG )
-
-### DEMO 2
-![Demo 1!](./docs/img2.PNG )
-
-### VIDEO
-![Demo 1!](./docs/video.MP4 )
 
