@@ -5,7 +5,7 @@ https://youtube.com/shorts/wD7M39FDHH8?feature=share
 
 imgage             |  image
 :-------------------------:|:-------------------------:
-![](./docs/img1.PNG)  |  ![](./docs/img1.PNG)
+![](./docs/img1.PNG)  |  ![](./docs/img2.PNG)
 ![](./docs/demo3.png)  |  ![](./docs/demo4.png)
 
 
