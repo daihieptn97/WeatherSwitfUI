@@ -15,6 +15,9 @@
 		91857C872BD034AA00356CED /* WetherDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91857C862BD034AA00356CED /* WetherDemoTests.swift */; };
 		91857C912BD034AB00356CED /* WetherDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91857C902BD034AB00356CED /* WetherDemoUITests.swift */; };
 		91857C932BD034AB00356CED /* WetherDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91857C922BD034AB00356CED /* WetherDemoUITestsLaunchTests.swift */; };
+		91A7DF432BD4E9FE00757643 /* LoaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B755622BD044AA000699AB /* LoaddingView.swift */; };
+		91A7DF462BD4EC7D00757643 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 91A7DF452BD4EC7D00757643 /* URLImage */; };
+		91A7DF482BD4EC7D00757643 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 91A7DF472BD4EC7D00757643 /* URLImageStore */; };
 		91B7555E2BD0400D000699AB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7555D2BD0400D000699AB /* LocationManager.swift */; };
 		91B755612BD041B1000699AB /* WellcomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B755602BD041B1000699AB /* WellcomeUIView.swift */; };
 		91B755632BD044AA000699AB /* LoaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B755622BD044AA000699AB /* LoaddingView.swift */; };
@@ -149,7 +152,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A7DF482BD4EC7D00757643 /* URLImageStore in Frameworks */,
 				91D67E7D2BD36F6E000019ED /* SwiftUI.framework in Frameworks */,
+				91A7DF462BD4EC7D00757643 /* URLImage in Frameworks */,
 				91D67E7B2BD36F6E000019ED /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +365,10 @@
 			dependencies = (
 			);
 			name = WeatherWidgetExtension;
+			packageProductDependencies = (
+				91A7DF452BD4EC7D00757643 /* URLImage */,
+				91A7DF472BD4EC7D00757643 /* URLImageStore */,
+			);
 			productName = WeatherWidgetExtension;
 			productReference = 91D67E792BD36F6E000019ED /* WeatherWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -401,6 +410,7 @@
 			mainGroup = 91857C692BD034A800356CED;
 			packageReferences = (
 				91B755722BD0C86B000699AB /* XCRemoteSwiftPackageReference "PartialSheet" */,
+				91A7DF442BD4EC7D00757643 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = 91857C732BD034A800356CED /* Products */;
 			projectDirPath = "";
@@ -594,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D67E912BD379AF000019ED /* DataServices.swift in Sources */,
+				91A7DF432BD4E9FE00757643 /* LoaddingView.swift in Sources */,
 				91D67E962BD393BF000019ED /* Extensions.swift in Sources */,
 				91D67E822BD36F6E000019ED /* WeatherWidget.swift in Sources */,
 				91D67E942BD37B35000019ED /* ModelData.swift in Sources */,
@@ -1001,6 +1012,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		91A7DF442BD4EC7D00757643 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
 		91B755722BD0C86B000699AB /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
@@ -1010,6 +1029,19 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91A7DF452BD4EC7D00757643 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A7DF442BD4EC7D00757643 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		91A7DF472BD4EC7D00757643 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A7DF442BD4EC7D00757643 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91857C6A2BD034A800356CED /* Project object */;
 }

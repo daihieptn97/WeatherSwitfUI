@@ -15,14 +15,14 @@ import SwiftUI
 extension Double {
     func roundDouble() -> String {
         return String(format: "%.0f", self)
-    }   
+    }
     func convertTimeStamps() -> String {
         
         let date = NSDate(timeIntervalSince1970: self)
-
+        
         let dayTimePeriodFormatter = DateFormatter()
         dayTimePeriodFormatter.dateFormat = "HH:mm"
-
+        
         let dateString = dayTimePeriodFormatter.string(from: date as Date)
         
         return dateString
@@ -47,9 +47,28 @@ extension View {
 struct RoundedCorner: Shape {
     var radius: CGFloat = .infinity
     var corners: UIRectCorner = .allCorners
-
+    
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         return Path(path.cgPath)
     }
+}
+
+extension Date {
+    func dayNumberOfWeek() -> Int? {
+        return Calendar.current.dateComponents([.weekday], from: self).weekday
+    }
+    
+    func dayOfWeek() -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE"
+        return dateFormatter.string(from: self).capitalized
+        // or use capitalized(with: locale) if you want
+    }
+    func day() -> Int {
+        // Tạo một bộ lịch để có thể lấy ngày
+        let calendar = Calendar.current
+        return calendar.component(.day, from: self)
+    }
+    
 }
