@@ -13,5 +13,5 @@
 
 
 ### VIDEO
-![Demo 1!](./docs/video.MP4 "video Here")
+![Demo 1!](./docs/video.mp4 "video Here")
 
