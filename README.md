@@ -13,5 +13,5 @@
 
 
 ### VIDEO
-![Demo 1!](./docs/video.mp4 "video Here")
+![Demo 1!](https://youtube.com/shorts/wD7M39FDHH8?feature=share "video Here")
 
