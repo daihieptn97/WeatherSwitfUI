@@ -1,20 +1,10 @@
-<div style="display: inline-block;">
-    <img src="./docs/img1.PNG" alt="Hình ảnh 1" width="300"/>
-</div>
-<div style="display: inline-block;">
-    <img src="./docs/img2.PNG" alt="Hình ảnh 2" width="300"/>
-</div>
+### VIDEO DEMO
+https://youtube.com/shorts/wD7M39FDHH8?feature=share
 
+# Image Demo
 
-<video controls width="500">
-    <source src="./docs/video.MP4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-
-### VIDEO
-![Demo 1!]( "video Here")
-
-[![Watch the video](./docs/img2.PNG)](https://youtube.com/shorts/wD7M39FDHH8?feature=share)
+IMG1             |  IMG2
+:-------------------------:|:-------------------------:
+![](./docs/img1.PNG)  |  ![](./docs/img1.PNG)
 
 
