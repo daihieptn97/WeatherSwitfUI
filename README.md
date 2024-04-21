@@ -13,5 +13,8 @@
 
 
 ### VIDEO
-![Demo 1!](https://youtube.com/shorts/wD7M39FDHH8?feature=share "video Here")
+![Demo 1!]( "video Here")
+
+[![Watch the video](./docs/img2.PNG)](https://youtube.com/shorts/wD7M39FDHH8?feature=share)
+
 
